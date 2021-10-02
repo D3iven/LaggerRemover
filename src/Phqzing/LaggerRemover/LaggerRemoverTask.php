@@ -8,12 +8,12 @@ class LaggerRemoverTask extends Task {
   
   private $plugin;
   
-  public function __construct(Loaader $plugin){
+  public function __construct(Main $plugin){
     $this->plugin = $plugin;
   }
   
   public function onRun(int $tick){
-    if($this->getConfig()->get("always-check") == false){
+    if($this->plugin->getConfig()->get("always-check") == false){
       $this->plugin->getScheduler()->cancelTask($this->getTaskId());
       return;
     }
