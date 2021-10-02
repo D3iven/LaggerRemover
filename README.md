@@ -1,7 +1,7 @@
 # Lagger Remover
 With this plugin you can disallow players that have a certain ping from joining your server!
 
-#Config
+# Config
 ```
 ---
 #if set to false the plugin will only check player ping when they join.
